@@ -37,7 +37,6 @@
     font-weight: bold;
     color: black;
     cursor: pointer;
-    /* Możesz również dodać kolor, aby bardziej wyróżnić tekst */
 }
 /* Wiersze i kolumny */
 .row {
@@ -174,7 +173,6 @@ img {
 /* Stylizacja przycisku "Pokaż" */
 .show-button {
     background-color: #dc3545;
-    /* Czerwony kolor tła, jak przycisk "Zaloguj" */
     color: white;
     border: 2px solid transparent;
     outline: none;

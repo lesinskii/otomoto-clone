@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar/Navbar';
 const Announcement = () => {
   const [cars, setCars] = useState([]);
   const [error, setError] = useState(null);
-
+ 
   useEffect(() => {
     const fetchCars = async () => {
       try {

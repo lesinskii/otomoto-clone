@@ -126,7 +126,7 @@ const Login = () => {
             <h1>{signState} aby kontynuować</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {success && <p style={{ color: 'green' }}>{success}</p>}
-            <form onSubmit={handleRegister}> {/* Zmieniono na handleRegister */}
+            <form onSubmit={handleRegister}> {}
               <input 
                 type="text" 
                 placeholder="Twoje imię" 
@@ -217,7 +217,7 @@ const Login = () => {
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {success && <p style={{ color: 'green' }}>{success}</p>}
             <h1>{signState} aby kontynuować</h1>
-            <form onSubmit={handleLogin}> {/* Zmieniono na handleLogin */}
+            <form onSubmit={handleLogin}> {}
               <input 
                 type="email" 
                 placeholder='E-mail' 

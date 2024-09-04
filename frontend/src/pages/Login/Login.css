@@ -123,11 +123,8 @@
     z-index: 1000;
     width: 100%;
     list-style-type: none;
-    /* Usuwa kropki z listy */
     padding-left: 0;
-    /* Usuwa domyślne wcięcie */
     margin: 0;
-    /* Usuwa marginesy */
 }
 
 .dropdown:hover .dropdown-menu {
