@@ -1,0 +1,120 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kontener główny */
+.background-div {
+    padding: 20px;
+    background-color: white;
+    /* Tło dla całej strony */
+}
+
+/* Centrum i stylizacja kontenera */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Wiersze i kolumny */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex: 1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/* Stylizacja przycisków */
+.btn {
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.btn img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+}
+
+/* Menu rozwijane */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    /* Zmniejsz szerokość menu */
+    border: 1px solid #ddd;
+    /* Maksymalna szerokość */
+    max-width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scrollable-menu {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Padding i marginesy */
+.p-0 {
+    padding: 0;
+}
+
+.p-4 {
+    padding: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Stylowanie obrazu */
+img {
+    max-width: 100%;
+    height: auto;
+}

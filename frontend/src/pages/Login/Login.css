@@ -1,0 +1,153 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    height: 60px;
+    
+}
+
+.login{
+    height: 100vh;
+    padding: 20px 8%;
+    text-align: center;
+}
+
+.login-form{
+    width: 100%;
+    max-width: 500px;
+    background: lightgray;
+    border-radius: 4px;
+    padding: 100px;
+    margin: auto;
+}
+
+.login-form h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+
+}
+
+.login-form input{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: white;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-form input ::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.login-form .login-button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-help{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #737373;
+    font-size: 13px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.remember input{
+    width: 18px;
+    height: 18px;
+}
+
+.form-switch{
+    margin-top: 40px;
+    color: #737373;
+}
+.form-switch span{
+    margin-left: 6px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background-color: #333;
+    /* Dopasowanie koloru tła */
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    list-style-type: none;
+    /* Usuwa kropki z listy */
+    padding-left: 0;
+    /* Usuwa domyślne wcięcie */
+    margin: 0;
+    /* Usuwa marginesy */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+.dropdown-item.disabled {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* Stylizacja scrollowalnego menu */
+.scrollable-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}

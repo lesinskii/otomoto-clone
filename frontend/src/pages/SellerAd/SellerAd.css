@@ -1,0 +1,223 @@
+/* Resetowanie marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylizacja kontenera tła */
+.background {
+    margin: 60px auto;
+    padding: 20px;
+    background: lightgray;
+    /*background-color: rgba(240, 240, 240, 0.5);*/
+    /* Jasnoszary z 50% przezroczystością */
+    /* Dopasowanie tła do formularza logowania */
+}
+
+/* Stylizacja kontenera głównego menu */
+.content {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container {
+    margin-top: 100px; 
+    text-align: center;
+}
+.container h1 {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+
+}
+.login-button {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    /* Możesz również dodać kolor, aby bardziej wyróżnić tekst */
+}
+/* Wiersze i kolumny */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    flex: 1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.column-half {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.column-quarter {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.column-one-third {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+/* Stylizacja grupy przycisków */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    background-color: #333;
+    /* Dopasowanie koloru tła */
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Stylizacja rozwijanych menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background-color: #333;
+    /* Dopasowanie koloru tła */
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    list-style-type: none;
+    /* Usuwa kropki z listy */
+    padding-left: 0;
+    /* Usuwa domyślne wcięcie */
+    margin: 0;
+    /* Usuwa marginesy */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+.dropdown-item.disabled {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* Stylizacja scrollowalnego menu */
+.scrollable-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Padding i marginesy */
+.padding {
+    padding: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Stylowanie obrazu */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stylizacja przycisku "Pokaż" */
+.show-button {
+    background-color: #dc3545;
+    /* Czerwony kolor tła, jak przycisk "Zaloguj" */
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 200px;
+    /* Szerokość przycisku */
+    margin-top: 20px;
+    /* Odstęp od góry */
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.show-button:hover {
+    background-color: white;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.button-input {
+    background-color: #333;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    cursor: text;
+    outline: none;
+}
+
+.button-input::placeholder {
+    color: white;
+}
+
+.button-input.focused::placeholder {
+    color: #ccc;
+}

@@ -1,0 +1,39 @@
+/* Styl dla głównego kontenera */
+.announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Utrzymanie navbar'u na górze strony */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Kontener na samochody */
+.car-list {
+    margin-top: 80px;
+    /* Zapewnienie miejsca na navbar */
+    width: 100%;
+    max-width: 600px;
+    /* Maksymalna szerokość strony */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styl dla prostokątów na dane o samochodach */
+.car-item {
+    width: 100%;
+    /* Prostokąty zajmują pełną szerokość kontenera */
+    padding: 20px;
+    background-color: #ccc;
+    /* Szary kolor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
